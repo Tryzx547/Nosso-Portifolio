@@ -1,0 +1,265 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f0f8ff; 
+}
+
+header {
+    background-color: #0066cc; /* Azul claro  na navegação */
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-radius: 0 0 15px 15px; /* deixa Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* uma Sombra suave */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 25px; /* Arredonda os links */
+    background-color: transparent;
+}
+
+.nav-links a:hover {
+    color: #00d0ff; /* Cor de destaque quando passa o mouse */
+    background-color: #004080; /* deixa o Fundo mais escuro quando passa o mouse */
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content .highlight {
+    color: #0095ff; /* da um destaque azul */
+}
+
+.hero-content .btn {
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content .btn:hover {
+    background-color: #00a6ff;
+    color: #004080;
+}
+
+.about, .projects, .contact, .css-info, .box-model {
+    padding: 4rem 0;
+    background-color: #f5f5f5;
+    border-radius: 15px; /* deixa arredondado */
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about p, .css-info p, .box-model p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.css-info ul, .box-model ul {
+    list-style-type: square;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.project {
+    text-align: center;
+}
+
+
+.projects .project img {
+    width: 80%;
+    border-radius: 0%; 
+    transition: all 0.3s ease; /* Transição  */
+}
+
+/* Efeito hover na imagem */
+.projects .project img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra  */
+}
+
+
+.project h3 {
+    margin: 1rem 0 0.5rem;
+}
+
+.project p {
+    font-size: 1rem;
+}
+
+
+.box-model .box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box-model .box {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #333;
+    color: #fff;
+    background-color: #004080;
+}
+
+
+.box-model .box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.box-model .box {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid #333;
+    color: #fff;
+    background-color: #004080;
+    transition: all 0.3s ease; /* Transição */
+}
+
+.box.small-box {
+    width: 100px;
+    height: 100px;
+}
+
+.box.medium-box {
+    width: 150px;
+    height: 150px;
+    padding: 25px;
+    margin: 20px;
+}
+
+.box.large-box {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #ffd700;
+    padding: 30px;
+    margin: 30px;
+}
+
+/* Efeito Hover */
+.box-model .box:hover {
+    background-color: #ffd700; /* muda o fundo quando passar o mouse */
+    color: #004080; /* muda a cor do texto */
+    transform: scale(1.1); /* Aumenta o tamanho da caixa */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+}
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact button {
+    background-color: #004080;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 50px;
+}
+
+.contact button:hover {
+    background-color: #0099ff;
+    color: #004080;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+}
