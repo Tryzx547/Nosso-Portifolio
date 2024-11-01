@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #333;
+    color: #333333;
     line-height: 1.6;
-    background-color: #f0f8ff; 
+    background-color: #ffffff; 
 }
 
 header {
-    background-color: #0066cc; /* Azul claro  na navegação */
+    background-color: #0066cc;
     color: #fff;
     padding: 1rem 0;
     position: fixed;
@@ -21,8 +21,8 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
-    border-radius: 0 0 15px 15px; /* deixa Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* uma Sombra suave */
+    border-radius: 0 0 15px 15px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 nav {
@@ -53,17 +53,17 @@ nav {
     font-weight: 400;
     transition: color 0.3s ease;
     padding: 0.5rem 1rem;
-    border-radius: 25px; /* Arredonda os links */
+    border-radius: 25px; 
     background-color: transparent;
 }
 
 .nav-links a:hover {
-    color: #00d0ff; /* Cor de destaque quando passa o mouse */
-    background-color: #004080; /* deixa o Fundo mais escuro quando passa o mouse */
+    color: #00d0ff; 
+    background-color: #004080; 
 }
 
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -83,7 +83,7 @@ nav {
 }
 
 .hero-content .highlight {
-    color: #0095ff; /* da um destaque azul */
+    color: #0095ff; 
 }
 
 .hero-content .btn {
@@ -103,8 +103,8 @@ nav {
 
 .about, .projects, .contact, .css-info, .box-model {
     padding: 4rem 0;
-    background-color: #f5f5f5;
-    border-radius: 15px; /* deixa arredondado */
+    background-color: #ffffff;
+    border-radius: 15px; 
     margin-bottom: 2rem;
 }
 
@@ -114,6 +114,7 @@ nav {
 }
 
 h2 {
+    color: #000000;
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
@@ -146,13 +147,7 @@ h2 {
 .projects .project img {
     width: 80%;
     border-radius: 0%; 
-    transition: all 0.3s ease; /* Transição  */
-}
-
-/* Efeito hover na imagem */
-.projects .project img:hover {
-    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra  */
+    transition: all 0.3s ease; 
 }
 
 
@@ -194,7 +189,7 @@ h2 {
     border: 2px solid #333;
     color: #fff;
     background-color: #004080;
-    transition: all 0.3s ease; /* Transição */
+    transition: all 0.3s ease; /* uma Transição */
 }
 
 .box.small-box {
@@ -217,7 +212,7 @@ h2 {
     margin: 30px;
 }
 
-/* Efeito Hover */
+
 .box-model .box:hover {
     background-color: #ffd700; /* muda o fundo quando passar o mouse */
     color: #004080; /* muda a cor do texto */
@@ -263,3 +258,161 @@ footer {
     color: #fff;
     border-radius: 15px 15px 0 0;
 }
+
+
+.formatacao-css {
+    padding: 4rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin: 2rem 0;
+    
+}
+
+.formatacao-css h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: rgb(0, 0, 0);
+    animation: fadeInUp 1.2s ease;
+}
+
+.formatacao-css p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.formatacao-exemplos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.example {
+    background: rgb(255, 255, 255);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.example:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+
+}
+
+.example:hover h3 {
+    color: #000000; 
+}
+
+.example:hover p {
+    color: #000000;
+}
+
+.example h3 {
+    color: #000000;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.cor-texto {
+    color: #f02400;
+}
+
+.tamanho-fonte {
+    font-size: 1.5rem;
+}
+
+.espacamento-linha {
+    line-height: 2;
+}
+
+.sombra-texto {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.search-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+
+.search-icon:hover {
+    color: #00d0ff; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-links,
+.search-icon {
+    display: flex;
+    align-items: center;
+}
+
+
+.about {
+    padding: 4rem 0;
+    background-color: #ffffff; 
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.text-content {
+    max-width: 600px;
+}
+
+.text-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.text-content .btn {
+    background-color: #000000;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.text-content .btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Título */
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
